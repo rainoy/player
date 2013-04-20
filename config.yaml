@@ -1,0 +1,16 @@
+---
+name: onlymusic
+version: 3
+cron:
+    - description: another cron test
+	  url: get.php
+	  schedule: */50 * * * *
+cron:
+    - description: another
+	  url: get.php
+	  schedule: */30 * * * *          
+   
+cron:
+    - description: another cron test
+	  url: get.php
+	  schedule: */20 * * * *

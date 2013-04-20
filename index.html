@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>星海音乐台</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="./image/favicon.ico">
+		<link rel="stylesheet" href="./player.css"/>
+	</head>
+	<body>
+		<div id="player" draggable="true">
+			<div class="leftBox">
+				<div id="nav"> 
+					<ul>
+						<li id="navChannel"></li>
+						<li id="navSearch"></li>
+						<li id="navUser"></li>
+						<li id="navSetting"></li>
+						<li id="navAbout"></li>
+					</ul>
+				</div>
+				<div id="content">
+					<div id="channelList">
+						<ul>
+							<li channelid="265" class="channelButton">聆听寂寞</li>
+							<li channelid="349" class="channelButton">早安</li>
+							<li channelid="266"	class="channelButton">华语怀旧</li>
+							<li channelid="341" class="channelButton">晚安</li>
+							<li channelid="259"	class="channelButton">欧美流行</li>
+							<li channelid="142" class="channelButton">新歌</li>
+							<li channelid="346" class="channelButton">午后提神</li>
+							<li channelid="361"	class="channelButton">女声</li>
+							<li channelid="352"	class="channelButton">毕业时节</li>
+							<li channelid="350" class="channelButton">童年</li>
+							<li channelid="288"	class="channelButton">欧美怀旧</li>
+							<li channelid="260"	class="channelButton">摇滚</li>
+							<li channelid="264"	class="channelButton">天籁纯音</li>
+							<li channelid="300" class="channelButton">吉他</li>
+						</ul>
+					</div>
+					<div id="search"></div>
+					<div id="login"></div>
+					<div id="setting"></div>
+					<div id="about"></div>
+				</div>
+			</div>
+			<div class="rightBox">
+				<div class="songsInfo">
+					<div id="channelName" class="channelName">天籁之声</div>
+					<div id="songsName" class="songsName">尽享听觉盛宴</div>
+					<div id="artist" class="artist">Ariel</div>
+					<div id="albumTitle" class="albumTitle">快来叫醒你的耳朵</div>
+				</div>
+				<div id="controlBar">
+					<div id="songsTime">
+						<div id="startTime"></div>
+						<div id="endTime"></div>
+						<div id="timeLine">
+							<div id="loading"></div>
+							<div id="pointer"></div>
+						</div>
+					</div>
+					<div id="controlButton">
+						<div id="like" title="喜欢"></div>
+						<div id="unlike" title="不再播放"></div>
+						<div id="pause" class="pause" title="播放/暂停"></div>
+						<div id="next" class="next" title="下一曲"></div>
+					</div>
+				</div>
+			</div>
+			<div id="albumPic">
+				<img id="albumPicture"/>
+			</div>
+			<audio id="audioPlayer" autoplay="autoplay"></audio>
+		</div>
+		<div class="lyricBox">
+			<div id="fLyric" class="firstLyric"></div>
+			<div id="sLyric" class="secondLyric"></div>
+		</div>
+		<div class="footer">
+		</div>
+		<script src="pl.js"></script>
+	</body>
+</html>

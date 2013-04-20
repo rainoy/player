@@ -1,0 +1,256 @@
+/**
+ * Renren player style now
+ */
+body, div, ul, ol, li,h1, h2, h3, h4, h5, h6, form, input, button, textarea, p{
+    margin: 0;
+    padding: 0;
+}
+body{background: #DDD url('./image/background.jpg') no-repeat fixed center center;}
+a{color:#fff; text-decoration:none; outline:none;}
+a:hover{color:#ccc;}
+h3{height:30px; line-height:30px; text-align:center}
+.b{border:red 1px solid;}
+/**
+ * 播放器主容器，水平、垂直居中
+ */
+#player{
+	width: 600px;
+	height: 300px;
+	margin: -180px 0px 0px -300px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	background:url('./image/background.png') repeat;
+	color:rgba(255,255,255,1);
+	box-shadow:5px 5px 20px #000;
+}
+#player ul{list-style: none;}
+/**
+ * 左右分区共用样式
+ */
+.leftBox,.rightBox{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.rightBox{left:300px;}
+/**
+ * 左侧导航菜单
+ */
+#nav{
+	width:50px;
+	height:100%;
+	padding-top:22px;
+	position:absolute;
+	left:0px;
+}
+#navChannel{background:url('./image/button.png') 0px -100px;}
+#navSearch{background:url('./image/button.png') -180px -50px;}
+#navUser{background:url('./image/button.png') -180px -100px;}
+#navSetting{background:url('./image/button.png') -70px -100px;}
+#navAbout{background:url('./image/button.png') -250px -50px;}
+/**
+ * 频道列表
+ */
+#nav li{
+	width:50px; 
+	height:50px; 
+	background-color:rgba(5,5,5,0.2);
+	display: block; 
+	margin:2px auto;
+	cursor: pointer;
+	box-shadow: 1px 1px 3px #000;
+}
+/**
+ * 左侧主显示区
+ */
+#content{
+	width:230px; 
+	height:260px;
+	padding:20px 10px;
+	position:absolute;
+	left:50px;
+}
+/*#channelList{display:none;}*/
+#channelList li{
+	width:100px;
+	height:30px;
+	margin:4px 6px;
+	float:left;
+	font-size:20px;
+	text-align:center;
+	line-height:30px;
+	background-color:rgba(5,5,5,0.2);
+	cursor: pointer;
+	box-shadow: 1px 1px 3px #000;
+}
+#channelList li:hover{
+	box-shadow: 1px 1px 3px #000;
+	text-shadow: 3px 3px 5px #141414;
+	color:#141414;
+}
+/**
+ * 设置
+ */
+#setting{display: none;}
+/**
+ * 搜索
+ */
+/**
+ * 关于
+ */
+#about{display: none;}
+#about p{font-size:18px; line-height:25px;}
+#about h5{height:30px; line-height:30px; text-align:center}
+/**
+ * 右侧功能区
+ */
+.songsInfo{
+	height: 180px;
+	padding:10px;
+	overflow: hidden;
+}
+.channelName{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	overflow: hidden;
+}
+.songsName{
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: 600;
+	overflow: hidden;
+}
+.artist{
+	height: 40px;
+	line-height: 40px;
+	font-size: 22px;
+	overflow: hidden;
+}
+.albumTitle{
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	overflow: hidden;
+}
+/**
+ * 右侧控制操作区
+ */
+
+#controlBar{
+	width: 100%;
+	height: 100px;
+
+}
+#songsTime{
+	height:40px;
+	font-size: 18px;
+	position:relative;
+}
+#startTime,#endTime,#timeLine,#pointer{
+	position:absolute;
+	top:0px;
+}
+#startTime,#timeLine{left:10px;}
+#endTime{
+	right:10px;
+}
+#timeLine, #loading, #pointer{height:4px;}
+#timeLine{
+	width:280px;
+	top:26px;
+	z-index:100;
+}
+#timeLine #loading{
+	width: 0px;
+	z-index:200;
+	background-color: #666;
+	cursor:pointer;
+	opacity:0.4;
+}
+#timeLine #pointer{
+	width: 0px;
+	z-index:300;
+	cursor:pointer;
+	background-color: #fff;
+}
+#controlButton{
+	height:60px;
+	position: relative;
+}
+#next,#pause,#like,#unlike{
+	position:absolute;
+	width:60px;
+	height:50px;
+	top:0px;
+	cursor: pointer;
+}
+#unlike{left:20px; background:url('./image/button.png') -240px 0px;}
+#unlike:hover{background:url('./image/button.png') -120px -150px;}
+#like{left:85px; background:url('./image/button.png') -120px 0px;}
+#like:hover{background:url('./image/button.png') -180px 0px;}
+#pause{left:150px; background:url('./image/button.png') -120px -51px;}
+#pause:hover{background:url('./image/button.png') -60px -150px;}
+#next{left:215px; background:url('./image/button.png') 0px -50px;}
+#next:hover{background:url('./image/button.png') -243px -100px;}
+/**
+ * album pic
+ */
+#albumPic{
+	width:300px;
+	height:300px;
+	background-color:#fff;
+	overflow: hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:1000;
+}
+/**
+ * 歌词显示
+ */
+.lyricBox{
+	width:600px;
+	margin-left:-300px;
+	position:absolute;
+	bottom:75px; left:50%;
+	font-size:32px;
+	text-shadow:3px -6px 4px #431203;
+	color:rgba(255,255,255,1);
+}
+.firstLyric{
+	text-align:center;
+	margin-bottom:20px;
+}
+.secondLyric{
+	text-align:right;
+}
+/**
+ * footer
+ */
+.footer{
+	color:rgba(255,255,200,.9);
+	z-index: 10000;
+	position:absolute;
+	width:100%;
+	text-align: center;
+	bottom:12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Ariel Music Radio</title>
+	<link rel="stylesheet" href="m2.css">
+</head>
+<body>
+	<header>
+		<h1>Ariel Music Radio</h1>
+	</header>
+	<nav>
+		<ul>
+			<li class="focus">频道</li>
+			<li>播放</li>
+		</ul>
+	</nav>
+	<article>
+		<div id="channelList" class="channel">
+			<ul>
+				<li channelid="265">聆听寂寞</li>
+				<li channelid="349">早安</li>
+				<li channelid="266">华语怀旧</li>
+				<li channelid="341">晚安</li>
+				<li channelid="259">欧美流行</li>
+				<li channelid="142">新歌</li>
+				<li channelid="346">午后提神</li>
+				<li channelid="361">女声</li>
+				<li channelid="352">毕业时节</li>
+				<li channelid="350">童年</li>
+				<li channelid="288">欧美怀旧</li>
+				<li channelid="260">摇滚</li>
+				<li channelid="264">天籁纯音</li>
+				<li channelid="300">吉他</li>
+			</ul>
+		</div>
+		<div class="play">
+			<div class="songsInfo">
+					<div class="albumPic">
+						<img id="albumPic" src="image/a.jpg" alt="album pic">
+					</div>
+					<div class="songsTextInfo">
+						<li id="channelName">天籁之声</li>
+						<li id="songsName">尽享听觉盛宴</li>
+						<li id="artist">Ariel</li>
+						<li id="albumTitle">快来叫醒你的耳朵</li>
+					</div>
+					<div class="lyric">
+						<div id="fLyric" class="firstLyric"></div>
+					</div>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div id="controlBar" class="controlBar">
+			<div class="songsTime">
+				<div id="startTime">00:00</div>
+				<div id="endTime">00:00</div>
+				<div id="timeLine">
+					<div id="loading"></div>
+					<div id="pointer"></div>
+				</div>
+			</div>
+			<div class="controlButton">
+				<li id="pre"></li>
+				<li id="pause"></li>
+				<li id="next"></li>
+			</div>
+		</div>
+	</footer>
+	<audio id="player" autoplay></audio>
+	<script src="m.js"></script>
+</body>
+</html>

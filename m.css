@@ -1,0 +1,184 @@
+/**
+ * Renren player style
+ */
+body, div, ul, ol, li,h1, h2, h3, h4, h5, h6, form, input, button, textarea, p{
+    margin: 0;
+    padding: 0;
+}
+a{color:#fff; text-decoration:none; outline:none;}
+a:hover{color:#ccc;} 
+ul,li{list-style:none;}
+body{
+	background: #DDD url('./image/mbg.jpg') no-repeat;
+	overflow:hidden;
+	color:#fff;
+}
+.b{border:red 1px solid;}
+/**
+ * header
+ */
+header{
+	width:100%;
+	height:55px;
+	background-color:rgba(0,0,0,.3);
+	border-bottom:1px solid rgba(0,0,0,.8);
+}
+
+header h1{
+	font-size:24px;
+	font-weight:normal;
+	text-align:center;
+	line-height:50px;
+}
+/**
+ * nav
+ */
+nav{
+	width:100%;
+	height:46px;
+	background-color:rgba(0,0,0,.5);
+	border-bottom:1px solid rgba(0,0,0,.5);
+}
+nav li{
+	width:50%;
+	height:100%;
+	font-size:20px;
+	line-height:42px;
+	display:inline-block;
+	float:left;
+	text-align:center;
+}
+nav .focus{
+	background-color:rgba(0,0,0,.2);
+}
+/**
+ * channel list
+ */
+article{
+	/*width:100%;
+	height:100%;*/
+	/*position:absolute;
+	top:50%;*/
+}
+.channel{display:none;}
+article .channel li{
+	width:100%;
+	height:36px;
+	margin-top:3px;
+	font-size:16px;
+	line-height:36px;
+	text-align:center;
+	background-color:rgba(0,0,0,.2);
+	border-bottom:1px solid rgba(0,0,0,.3);
+}
+
+/**
+ * play
+ */
+.play{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:30%;
+	/*margin-top:-180px;*/
+	/*display:none;*/
+}
+.songsInfo{
+	width:80%;
+	position:relative;
+	margin:0 auto;
+}
+.albumPic img{
+	width:100%;
+	height:auto;
+	display:block;
+}
+.songsTextInfo{
+	width:36%;
+	height:auto;
+	position:absolute;
+	top:0px;
+	left:10%;
+}
+.songsTextInfo li{
+	display:block;
+	margin:3px 0px;
+}
+#channelName{
+	margin-top:20px;
+	font-size:14px;
+}
+#songsName{
+	font-size:22px;
+	font-weight:border;
+	margin:15px 0px;
+}
+#artist{
+	font-size:20px;
+}
+#albumTitle{
+	margin-top:30px;
+}
+.lyric{
+	height:100%;
+	text-align:center;
+	padding-top:100px;
+}
+.firstLyric{
+	font-size:22px;
+	text-shadow:3px -6px 4px #431203;
+	color:rgba(255,255,255,1);
+}
+/**
+ * footer
+ */
+footer{
+	width:100%;
+	height:56px;
+	background-color:rgba(0,0,0,.5);
+	position:absolute;
+	bottom:0px;
+}
+.controlBar{
+	width:100%;
+}
+.songsTime{
+	height:3px;
+	background-color:rgba(0,0,0,.3);
+	position:relative;
+}
+#loading{
+	height:3px; width:200px; background-color:rgba(255,255,255,.3);
+	position:absolute;
+	top:0px;
+}
+#pointer{
+	height:3px; width:100px; background-color:rgba(255,255,255,.6);
+	position:absolute;
+	top:0px;
+}
+#startTime{
+	position:absolute;
+	bottom:6px;
+	left:2px;
+}
+#endTime{
+	position:absolute;
+	bottom:6px;
+	right:2px;
+}
+.controlButton{
+	height:53px;
+}
+.controlButton li{
+	display:block;
+	width:33%;
+	height:100%;
+	float:left;
+}
+#pre{background:url('./image/mbutton.png') 50px -150px no-repeat;}
+#pause{background:url('./image/mbutton.png') 50px -1px no-repeat;}
+#next{background:url('./image/mbutton.png') 50px -100px no-repeat;}
+
+
+
